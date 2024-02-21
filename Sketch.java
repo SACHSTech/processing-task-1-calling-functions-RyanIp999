@@ -8,7 +8,7 @@ public class Sketch extends PApplet {
    */
   public void settings() {
 	// put your size call here
-    size(400, 400);
+    size(700, 700);
   }
 
   /** 
@@ -23,39 +23,41 @@ public class Sketch extends PApplet {
    * Called repeatedly, anything drawn to the screen goes here
    */
   public void draw() {
+    
+
     // stalk 
     stroke(5, 250, 74);
     fill(5, 250, 74);
-    rect(190,200,20,300);
+    rect((float)(width * 0.475),(float)(height * 0.5),(float)(width * 0.05),(float)(height * 0.75));
 
     // flower head
     stroke(252, 244, 0);
     fill(252, 244, 0);
-    ellipse(200,150, 150, 150);
+    ellipse((float)(width * 0.5),(float)(height * 0.375),(float)(width * 0.375), (float)(height * 0.375));
     
     // flower center
 
     stroke(3, 3, 3);
     fill(3, 3, 3);
-    ellipse(200,150, 50,50);
+    ellipse((float)(width * 0.5),(float)(height * 0.375), (float)(width * 0.125),(float)(height * 0.125));
 
     // grasss
     stroke(5, 250, 70);
     fill(5, 250, 70);
-    triangle(0, 400, 15, 350, 30, 400);
-    triangle(30, 400, 45, 350, 60, 400);
-    triangle(60, 400, 75, 350, 90, 400);
-    triangle(90, 400, 105, 350, 120, 400);
-    triangle(120, 400, 135, 350, 150, 400);
-    triangle(150, 400, 165, 350, 180, 400);
-    triangle(180, 400, 195, 350, 210, 400);
-    triangle(210, 400, 225, 350, 240, 400);
-    triangle(240, 400, 255, 350, 270, 400);
-    triangle(270, 400, 285, 350, 300, 400);
-    triangle(300, 400, 315, 350, 330, 400);
-    triangle(330, 400, 345, 350, 360, 400);
-    triangle(360, 400, 375, 350, 390, 400);
-    triangle(390, 400, 405, 350, 405, 400);
+    triangle(0, height, (float)(width * 0.0375), (float)(height * 0.875), (float)(width * 0.075), height);
+    triangle((float)(width * 0.075), height, (float)(width * 0.113), (float)(height * 0.875), (float)(width * 0.15), height);
+    triangle((float)(width * 0.15), height, (float)(width * 0.188), (float)(height * 0.875), (float)(width * 0.225), height);
+    triangle((float)(width * 0.225), height, (float)(width * 0.263), (float)(height * 0.875), (float)(width * 0.3), height);
+    triangle((float)(width * 0.3), height, (float)(width * 0.338), (float)(height * 0.875), (float)(width * 0.375), height);
+    triangle((float)(width * 0.375), height, (float)(width * 0.413), (float)(height * 0.875), (float)(width * 0.45), height);
+    triangle((float)(width * 0.45), height, (float)(width * 0.488), (float)(height * 0.875), (float)(width * 0.525), height);
+    triangle((float)(width * 0.525), height, (float)(width * 0.563), (float)(height * 0.875), (float)(width * 0.6), height);
+    triangle((float)(width * 0.6), height, (float)(width * 0.638), (float)(height * 0.875), (float)(width * 0.675), height);
+    triangle((float)(width * 0.675), height, (float)(width * 0.713), (float)(height * 0.875), (float)(width * 0.75), height);
+    triangle((float)(width * 0.75), height, (float)(width * 0.788), (float)(height * 0.875), (float)(width * 0.825), height);
+    triangle((float)(width * 0.825), height, (float)(width * 0.863), (float)(height * 0.875), (float)(width * 0.9), height);
+    triangle((float)(width * 0.9), height, (float)(width * 0.938), (float)(height * 0.875), (float)(width * 0.975), height);
+    triangle((float)(width * 0.975), height, (float)(width * 1.0125), (float)(height * 0.875), (float)(width * 1.0375), height);
   }
   
   // define other methods down here.
